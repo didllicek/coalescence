@@ -1,0 +1,62 @@
+{
+    "initialConditions": {
+        "concentrations": {
+            "isocyanate": 4455,
+            "polyol": 5140,
+            "water": 671,
+            "blowingAgents": {
+                "CO2": 0.0
+            }
+        },
+        "temperature": 300
+    },
+    "kinetics": {
+        "gelPoint": 0.60,
+        "gellingReaction": {
+            "frequentialFactor": 1,
+            "activationEnergy": 3.514e4,
+            "reactionEnthalpy": -6.85e4
+        },
+        "blowingReaction": {
+            "frequentialFactor": 1.050e3,
+            "activationEnergy": 2.704e4,
+            "reactionEnthalpy": -8.15e4
+        }
+    },
+    "physicalProperties": {
+        "pressure": 1.01e5,
+        "blowingAgents": {
+            "CO2": {
+                "molarMass": 44e-3,
+                "heatCapacityInLiquidPhase": 837,
+                "heatCapacityInGaseousPhase": 837,
+                "evaporationHeat": 0,
+                "diffusivityModel": "constant",
+                "diffusivity": 4.4e-10,
+                "solubilityModel": "hardcodedconstant",
+                "solubility": 1.1e-4
+            }
+        },
+        "air" :{
+            "molarMass": 29e-3
+        },
+        "polymer": {
+            "heatCapacity": 1800,  
+            "density": 1100,   
+            "molarMassNCO": 615
+        },
+        "surfaceTension": 25e-3
+    },
+    "coalescence": {
+        "integrator": "dlsodes",
+	"method": "stiff",
+        "polystyren":false,
+	"number_of_bubbles":800,
+        "initialTime": 0,
+        "finalTime": 67,
+        "outerTimeSteps":1000000000,
+        "maxInnerTimeSteps": 100000000,
+        "relativeTolerance": 1e-8,
+        "absoluteTolerance": 1e-8
+    }
+}

@@ -1,0 +1,3 @@
+/home/kvetinka/Documents/coalescence/CMakeFiles/rebuild_cache.dir
+/home/kvetinka/Documents/coalescence/CMakeFiles/edit_cache.dir
+/home/kvetinka/Documents/coalescence/CMakeFiles/coalesce.dir
